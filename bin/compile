@@ -1,0 +1,39 @@
+#!/usr/bin/env bash
+
+BIN_DIR=$(dirname $0)
+BUILDPACK_DIR=`cd $(dirname $0); cd ..; pwd`
+BUILD_DIR=$1
+CACHE_DIR=$2
+
+#cd $BUILD_DIR
+#mkdir java
+#cd java/
+
+#mkdir -p $CACHE_DIR/
+##mv * $CACHE_DIR/
+#mv $CACHE_DIR/ .
+
+#JAVA_DIR="${BUILDPACK_DIR}/download/jdk1.8.0_71"
+#cp -rp  $JAVA_DIR .
+#pwd
+#ls -la
+
+#ls -la /var/vcap/packages/dea_next/buildpacks/lib
+
+#JAVA_HOME="$BUILD_DIR/java/jdk1.8.0_71"
+#PATH=$PATH:$JAVA_HOME/bin
+#CLASSPATH=.:$JAVA_HOME/jre/lib:$JAVA_HOME/lib:$JAVA_HOME/lib/tools.jar
+
+cd $BUILD_DIR
+pwd
+ls -la
+mkdir java
+JAVA_HOME="${BUILD_DIR}/jdk1.8.0_71"
+PATH=$PATH:$JAVA_HOME/bin
+CLASSPATH=.:$JAVA_HOME/jre/lib:$JAVA_HOME/lib:$JAVA_HOME/lib/tools.jar
+
+
+#----------------------------------------------#
+rm -rf $CACHE_DIR
+Status API Training Shop Blog About Pricing
+c 2016 GitHub, Inc. Terms Privacy Security Contact Help

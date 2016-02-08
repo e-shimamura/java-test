@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+if [ -z "$( $1/ )" ]; then
+  exit 1
+else
+  echo "My PHP Env"
+  exit 0
+fi
