@@ -35,5 +35,3 @@ CLASSPATH=.:$JAVA_HOME/jre/lib:$JAVA_HOME/lib:$JAVA_HOME/lib/tools.jar
 
 #----------------------------------------------#
 rm -rf $CACHE_DIR
-Status API Training Shop Blog About Pricing
-c 2016 GitHub, Inc. Terms Privacy Security Contact Help
