@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
-
-cat <<EOF
+ 
+cat <<YAML
 ---
-config_vars:
-EOF
+default_process_types:
+  web: sh test.sh
+YAML
